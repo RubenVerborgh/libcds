@@ -275,7 +275,7 @@ uint ssa::locate(uchar * pattern, uint m, uint ** occs) {
   assert(m>0);
   assert(pattern!=NULL);
   assert(bwt!=NULL);
-  ulong i=m-1;
+  unsigned long i=m-1;
   uint c = pattern[i]; 
   uint sp = occ[c];
   uint ep = occ[c+1]-1;
@@ -317,7 +317,7 @@ uint ssa::count(uchar * pattern, uint m) {
   assert(m>0);
   assert(pattern!=NULL);
   assert(bwt!=NULL);
-  ulong i=m-1;
+  unsigned long i=m-1;
   uint c = pattern[i]; 
   uint sp = occ[c];
   uint ep = occ[c+1]-1;
