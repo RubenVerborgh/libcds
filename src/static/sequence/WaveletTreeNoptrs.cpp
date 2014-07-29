@@ -493,7 +493,7 @@ namespace cds_static
 				bitclean(bm[level], offset + i);
 			} else {
 				right[cright++] = symbols[i];
-				bitset(bm[level], offset + i);
+				cds_utils::bitset(bm[level], offset + i);
 			}
 		}
 
@@ -530,7 +530,7 @@ namespace cds_static
 			}
 			else {
 				set_field(right, width, cright++, get_field(symbols, width, i));
-				bitset(bm[level], offset + i);
+				cds_utils::bitset(bm[level], offset + i);
 			}
 		}
 
